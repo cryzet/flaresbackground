@@ -1,4 +1,0 @@
-En esta carpeta iran los iconos de las carpetas que existen en "media" o sea, un icono por cada carpeta existente en la carpeta media. El icono debe estar en formato "png"
-
-La sintaxis del nombre sera la siguiente:
-Para la carpeta "fotos" el correspondiente icono es "fotos.png"
