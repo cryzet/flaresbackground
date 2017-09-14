@@ -18,3 +18,4 @@ $theme=$thememanager[1];
 include ('content_provider.php');
 //-------------------------------------------------------------
 include ('themes/'.$theme.'/theme.php');
+//test
