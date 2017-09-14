@@ -1,0 +1,20 @@
+<div class="upload-form"  id="upload-div" style="">
+
+    <div align="center" style="overflow: hidden">
+        <form class="loadfile" enctype="multipart/form-data" method="post" action="upload.php">
+
+            <div class="filecontrol" id="filecontrol">
+                <input type="file" name="file1" id="file1" style="display: none" onchange="fileChange();">
+                <input type="text" name="filepath" id="filepath" value="archivo" placeholder="No ha seleccionado ningun archivo">
+                <input class="green button" type="button" value="Seleccionar" onclick="openfiledialog();">
+            </div>
+
+            <div class="right">
+                <input type="button" name="vancelar" class="button red" value="Cancelar" onclick="b_cancelarClick();">
+                <input type="button" name="subir" class="green" value="Subir" onclick="b_subirClick();">
+            </div>
+
+        </form>
+    </div>
+
+</div>
