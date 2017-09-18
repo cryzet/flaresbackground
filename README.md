@@ -1,4 +1,4 @@
-# Flare Background
+# Flares Background
 
 An iCloud Css background template
 
@@ -13,4 +13,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Demo
 
-[click here](https://cryzet.github.io/flarebacground/)
+[click here](https://cryzet.github.io/flaresbackground/)
