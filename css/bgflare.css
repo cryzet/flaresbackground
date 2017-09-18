@@ -13,11 +13,16 @@
     left: 0;
 }
 
+.cap{
+    height: 100%;
+    width: 100%;
+}
+
 /*------------------------- CAP1 ----------------------------------------*/
 
 #cap_1{
     position: fixed;
-    border: 2px red solid;
+    /*border: 2px red solid;*/
     overflow: visible;
     z-index: -90;
     height: 50%;
