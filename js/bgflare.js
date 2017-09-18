@@ -9,7 +9,7 @@ function getPosition(e){
     var capa2 = document.getElementById('cap_2');
     var capa3 = document.getElementById('cap_3');
     var capa4 = document.getElementById('cap_4');
-    nodoCoordenadas.innerHTML = 'Posicion x: ' + posicionX + ';  Posicion y: ' + posicionY;
+    //nodoCoordenadas.innerHTML = 'Posicion x: ' + posicionX + ';  Posicion y: ' + posicionY;
 
     capa1.setAttribute('style','position: absolute; top:'+posicionY/50+'px; left:'+posicionX/50+'px;');
     capa2.setAttribute('style','position: absolute; top:'+posicionY/100+'px; left:'+posicionX/100+'px;');
