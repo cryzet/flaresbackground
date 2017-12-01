@@ -2,15 +2,528 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bgflare.css">
-    <link rel="stylesheet" href="css/timeline.css">
+    <style>
+        .blur{
+            filter: blur(6px);
+        }
+
+        .bg_flare{
+            background-image: linear-gradient(180deg, #2a5db0, #5487ea, #5487ea, #336bff);
+            /*background-color: black;*/
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -100;
+            top: 0;
+            left: 0;
+        }
+
+        .cap{
+            height: 100%;
+            width: 100%;
+        }
+
+        /*------------------------- CAP1 ----------------------------------------*/
+
+        #cap_1{
+            position: fixed;
+            /*border: 2px red solid;*/
+            overflow: visible;
+            z-index: -90;
+            height: 50%;
+            width: 50%;
+            top: 12px;
+        }
+        #bubble_1{
+            top: 60px;
+            left: 90px;
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: rgb(162, 144, 255);
+            opacity: 0.3;
+        }
+
+        #bubble_2{
+            top: 450px;
+            left: 600px;
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: rgb(94, 243, 255);
+            opacity: 0.2;
+        }
+
+        #bubble_3{
+            top: 200px;
+            left: 460px;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(255, 183, 235);
+            opacity: 0.2;
+        }
+
+        #bubble_4{
+            top: 300px;
+            left: 950px;
+            position: absolute;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            background-color: rgb(230, 191, 255);
+            opacity: 0.2;
+        }
+
+        #bubble_5{
+            top: -100px;
+            left: 800px;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(98, 219, 255);
+            opacity: 0.2;
+        }
+
+        /*-----------------------------CAP_1-----------------------------------------------*/
+
+
+        /*-----------------------------CAP_2-----------------------------------------------------*/
+        #bubble_6{
+            top: -200px;
+            left: 20px;
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: rgb(70, 255, 252);
+            opacity: 0.2;
+        }
+
+        #bubble_7{
+            bottom: -100px;
+            left: 300px;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(255, 148, 252);
+            opacity: 0.2;
+        }
+
+        #bubble_8{
+            bottom: 100px;
+            left: 0px;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(79, 159, 255);
+            opacity: 0.2;
+        }
+
+        #bubble_9{
+            top: 60px;
+            left: 90px;
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: rgb(208, 188, 255);
+            opacity: 0.3;
+        }
+
+        #bubble_10{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rgb(209, 255, 250);
+            opacity: 0.3;
+        }
+
+        #bubble_11{
+            top: 80%;
+            left: 90%;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rgb(115, 240, 255);
+            opacity: 0.3;
+        }
+
+        #bubble_12{
+            top: 90%;
+            right: 50%;
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: rgb(115, 240, 255);
+            opacity: 0.3;
+        }
+
+        /*--------------------------- CAP_1 --------------------------------------------------*/
+        .actor1{
+            animation-duration: 400s;
+            animation-name: actor1;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor1{
+            from{
+                top: 60px;
+                left: 90px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+
+            to{
+                top: -300px;
+                left: 30px;
+                opacity: 0;
+            }
+        }
+
+        .actor2{
+            animation-duration: 200s;
+            animation-name: actor2;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor2{
+            from{
+                top: 450px;
+                left: 600px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+
+            70%{
+                top: -300px;
+                left: 900px;
+                opacity: 0.3;
+            }
+
+            to{
+                top: -300px;
+                left: 1000px;
+                opacity: 0;
+                background-color: #ffb6e1;
+            }
+        }
+
+        .actor3{
+            animation-duration: 300s;
+            animation-name: actor3;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor3{
+            from{
+                top: 200px;
+                left: 460px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+
+            to{
+                top: 600px;
+                left: -900px;
+                opacity: 0;
+                background-color: #5ae9ff;
+            }
+        }
+
+        .actor4{
+            animation-duration: 200s;
+            animation-name: actor4;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor4{
+            from{
+                top: 300px;
+                left: 950px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+
+            to{
+                top: 400px;
+                left: 1300px;
+                opacity: 0;
+            }
+        }
+
+        .actor5{
+            animation-duration: 400s;
+            animation-name: actor5;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor5 {
+            from{
+                top: -100px;
+                left: 800px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+            to{
+                top: 2000px;
+                left: 1050px;
+            }
+        }
+        /*--------------------------- CAP_1 --------------------------------------------------*/
+        .actor6{
+            animation-duration: 150s;
+            animation-name: actor6;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor6 {
+            from{
+                top: -150px;
+                left: 20px;
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.3;
+            }
+            to{
+                top: 400px;
+                left: 300px;
+                opacity: 0;
+            }
+        }
+
+        .actor7{
+            animation-duration: 300s;
+            animation-name: actor7;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor7 {
+            from{
+                bottom: -100px;
+                left: 300px;
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.3;
+                left: 900px;
+            }
+
+            70%{
+                opacity: 0.3;
+            }
+            to{
+                bottom: 300px;
+                left: 390px;
+                opacity: 0;
+                background-color: #5ae9ff;
+            }
+        }
+
+        .actor8{
+            animation-duration: 300s;
+            animation-name: actor8;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor8 {
+            from{
+                bottom: 100px;
+                left: 0px;
+                opacity: 0;
+            }
+            15%{
+                opacity: 0.3;
+            }
+            30%{
+                opacity: 0;
+            }
+            45%{
+                opacity: 0.3;
+            }
+            50%{
+                bottom: 300px;
+                left: 80px;
+                opacity: 0.3;
+            }
+            60%{
+                opacity: 0.3;
+            }
+            to{
+                bottom: 400px;
+                left: 900px;
+                opacity: 0;
+            }
+        }
+        .actor9{
+            animation-duration: 100s;
+            animation-name: actor9;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes actor9{
+            from{
+                top: 60px;
+                left: 90px;
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0.3;
+            }
+
+            50%{
+                opacity: 0.3;
+            }
+
+            to{
+                top: 500px;
+                left: 200px;
+                opacity: 0;
+            }
+        }
+
+        .actor10{
+            animation-duration: 500s;
+            animation-name: actor10;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor10 {
+            from{
+                top: 400px;
+                left: 60px;
+                opacity: 0;
+            }
+            20%{
+                top: 100px;
+                left: 60px;
+                opacity:0.3;
+            }
+            30%{
+                top: 200px;
+                left: 100px;
+                opacity:0;
+            }
+            40%{
+                top: 70px;
+                left: 300px;
+                opacity:0.3;
+                background-color: #9aa8ff;
+            }
+            50%{
+                opacity: 0;
+            }
+            60%{
+                opacity: 0.3;
+                background-color: #ff83ed;
+            }
+            to{
+                left: 1000px;
+                opacity: 0;
+            }
+        }
+
+        .actor11{
+            animation-duration: 120s;
+            animation-name: actor11;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor11 {
+            from{
+                top: 80%;
+                left: 90%;
+                opacity: 0;
+            }
+            10%{
+                opacity: 0.3;
+            }
+            80%{
+                opacity: 0.3;
+                background-color: #ffb6e1;
+            }
+            to{
+                top:50%;
+                left:50%;
+                opacity: 0;
+            }
+        }
+
+        .actor12{
+            animation-duration: 220s;
+            animation-name: actor12;
+            animation-iteration-count: infinite;
+        }
+        @keyframes actor12 {
+            from{
+                top: 90%;
+                right: 50%;
+                opacity: 0;
+            }
+            10%{
+                opacity: 0.3;
+            }
+            80%{
+                opacity: 0.3;
+                background-color: #b9b2ff;
+            }
+            to{
+                top:1%;
+                right:50%;
+                opacity: 0;
+            }
+        }
+    </style>
     <title>Flare</title>
     <meta name="theme-color" content="#083756" >
 </head>
 <body>
-<span>Posici&oacute;n del cursor: </span><span id="coordenadas"></span><br>
-<span>Mitad: </span><span id="coordenadas2"></span><br>
-<span>Dimenciones: </span><span id="dimenciones"></span>
+<!--<span>Posici&oacute;n del cursor: </span><span id="coordenadas"></span><br>-->
+<!--<span>Mitad: </span><span id="coordenadas2"></span><br>-->
+<!--<span>Dimensiones: </span><span id="dimensiones"></span>-->
 
 <div class="bg_flare" id="bg_flare">
 
@@ -42,5 +555,31 @@
 </div>
 
 </body>
-<script type="text/javascript" src="js/bgflare.js"></script>
-</html>
+<script type="text/javascript">
+    window.onload = function() {
+        document.onmousemove = getPosition;
+    };
+    function getPosition(e){
+        var documentH = document.documentElement.clientHeight/2;
+        var documentW = document.documentElement.clientWidth/2;
+        var posicionX = (e.clientX)/2;
+        var posicionY = (e.clientY)/2;
+        var posicionX1 = posicionX - documentW/2;
+        var posicionY1 = posicionY - documentH/2;
+        var nodoCoordenadas = document.getElementById('coordenadas');
+        var nodoCoordenadas2 = document.getElementById('coordenadas2');
+        var dimensiones = document.getElementById('dimensiones');
+        var capa1 = document.getElementById('cap_1');
+        var capa2 = document.getElementById('cap_2');
+        var capa3 = document.getElementById('cap_3');
+        var capa4 = document.getElementById('cap_4');
+        //nodoCoordenadas.innerHTML = 'X: ' + posicionX + ';  Y: ' + posicionY;
+        //nodoCoordenadas2.innerHTML = 'X: ' + posicionX1 + ';  Y: ' + posicionY1;
+        //dimensiones.innerHTML = 'Ancho: ' + documentW + ';  Alto: ' + documentH;
+
+        capa1.setAttribute('style','position: absolute; top:'+posicionY1+'px; left:'+posicionX1+'px;transition: 30s');
+        capa2.setAttribute('style','position: absolute; top:'+posicionY1+'px; left:'+posicionX1+'px;transition: 40s');
+        capa3.setAttribute('style','position: absolute; top:'+posicionY1+'px; left:'+posicionX1+'px;transition: 60s');
+        capa4.setAttribute('style','position: absolute; top:'+posicionY1+'px; left:'+posicionX1+'px;transition: 70s');
+    }
+</script>
