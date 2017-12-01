@@ -10,7 +10,7 @@ function getPosition(e){
     var posicionY1 = (e.clientY) - documentH/2;
     var nodoCoordenadas = document.getElementById('coordenadas');
     var nodoCoordenadas2 = document.getElementById('coordenadas2');
-    var dimenciones = document.getElementById('dimenciones');
+    var dimenciones = document.getElementById('dimensiones');
     var capa1 = document.getElementById('cap_1');
     var capa2 = document.getElementById('cap_2');
     var capa3 = document.getElementById('cap_3');
