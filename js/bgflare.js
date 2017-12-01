@@ -4,8 +4,8 @@ window.onload = function() {
 function getPosition(e){
     var documentH = document.documentElement.clientHeight/2;
     var documentW = document.documentElement.clientWidth/2;
-    var posicionX = (e.clientX)/2;
-    var posicionY = (e.clientY)/2;
+    var posicionX = (e.clientX);
+    var posicionY = (e.clientY);
     var posicionX1 = posicionX - documentW/2;
     var posicionY1 = posicionY - documentH/2;
     var nodoCoordenadas = document.getElementById('coordenadas');
